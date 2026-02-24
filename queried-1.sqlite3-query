@@ -33,3 +33,5 @@ WHERE Studio.StudioName = 'CD Projekt Red';
 
 SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
 WHERE Game.Gameid = 3;
+    
+ALTER TABLE Game ADD COLUMN imageURL TEXT;
