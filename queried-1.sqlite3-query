@@ -1,0 +1,35 @@
+-- database: ./database.db
+
+SELECT * FROM Game;
+
+INSERT INTO Game(Gameid,Cost,Country,StudioID,Gamename) 
+VALUES (1, 33.95, 'Canada', 1, 'Dead by Daylight');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename) 
+VALUES (2, 58.99, 'Poland', 5, 'The Witcher 3: Wild Hunt');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename) 
+VALUES (3, 42.99, 'USA', 4, 'Slay the Spire');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename) 
+VALUES (4, 0, 'USA', 1, 'Apex Legends');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename) 
+VALUES (5, 74.99, 'USA', 3, 'Grand Theft Auto V');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename) 
+VALUES (6, 0, 'USA', 0, 'Counter-Strike 2');
+
+
+
+SELECT * FROM Game;
+
+SELECT * FROM Game
+JOIN Studio ON Game.StudioID = Studio.StudioID;
+
+SELECT Game.Country FROM Game
+JOIN Studio ON Game.StudioID = Studio.StudioID
+WHERE Studio.StudioName = 'CD Projekt Red';
+
+SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
+WHERE Game.Gameid = 3;
