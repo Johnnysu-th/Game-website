@@ -1,4 +1,4 @@
-from flask import Flask, g
+from flask import Flask, g, render_template
 import sqlite3
 
 
@@ -45,21 +45,19 @@ def home():
 
 
    sql="""
-   SELECT Game.GameName, Game.Country, Game.Cost FROM Game
+   SELECT Game.Gameid, Game.Cost, Game.Country, Game.GameName, Game.imageURL FROM Game
    JOIN Studio ON Game.StudioID = Studio.StudioID;"""
 
 
    results = query_db(sql)
-   return str(results)
-
-
+   return render_template('home.html', results=results)
 
 @app.route("/Game/<int:gameid>")
 def game(gameid):
     spl = """SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
     WHERE Game.Gameid = ?;"""
     result = query_db(spl, (gameid,),True)
-    return str(result)
+    return render_template('game.html', game=result)
 
 
  

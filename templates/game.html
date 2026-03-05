@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- just one game-->
+ <!-- two column grid -->
+<div class="two-column">
+    <!-- image on the left -->
+    <div class="left-column">
+        <img src="{{ game[5] }}" alt="{{ game[4] }}">
+    </div>
+    <!-- details on the right -->
+    <div class="info">
+        <h1>{{ game[4] }}</h1>
+        <p>Country: {{ game[2] }}</p>
+        <p>Cost: ${{ game[1] }}</p>
+    </div>
+</div>
+{% endblock %}
