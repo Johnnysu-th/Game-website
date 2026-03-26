@@ -7,5 +7,38 @@ body,h1,h2,h3,h4,h5,h6 {
     gap: 2em;
 }
 img {
-    width: 50%;
+    width: 100%;
+}
+.hero-image {
+  background-image: url(image/4gamecovers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 350px;
+}
+
+.hero_text {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+  font-size: 5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* left narrow, right wide */
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.info {
+  font-size: 1.2em;
 }

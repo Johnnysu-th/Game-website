@@ -2,6 +2,7 @@
 {% block body %}
 <!-- homepage goes on here-->
  <!-- a 3 colmn grid -->
+  
 <div class="three-column">
     {% for Game in results %}
     <a href="{{ url_for('game', gameid=Game[0]) }}">
