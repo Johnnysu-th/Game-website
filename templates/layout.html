@@ -20,24 +20,14 @@
         <h1 class="hero_text">Great Games</h1>
     </section>
 
-    <div class="w3-bar w3-border w3-light-grey">
-        <a href="{{ url_for('home') }}" class="w3-bar-item w3-button">Home</a>
-    </div>
+    <nav class="nav-bar">
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('gamepage') }}">Games</a></li>
+    </ul>
+    </nav>
 
-   
-     <section class="two-column">
-    <!-- Left column: phone picture -->
-    <div class="image">
-      <img src="static/image/phone.png" alt="phone picture">
-    </div>
 
-    <!-- Right column: text content -->
-    <div class="info">
-      <p>
-        Have you felt bored because you’re just tired of the games you used to play and don’t know what to play. Don’t worry, this website will recommend some to help you discover more games which are great and worth to play .
-      </p>
-
-    </div>
 
 
 
