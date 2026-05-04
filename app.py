@@ -45,7 +45,7 @@ def home():
 
 
    sql="""
-   SELECT Game.Gameid, Game.Cost, Game.Country, Game.GameName, Game.imageURL FROM Game
+   SELECT * FROM Game
    JOIN Studio ON Game.StudioID = Studio.StudioID;"""
 
 
@@ -63,13 +63,13 @@ def game(gameid):
 @app.route('/games')
 def gamepage():
   
-    sql = """SELECT Game.Gameid, Game.Cost, Game.Country, Game.GameName, Game.imageURL FROM Game
+    sql = """SELECT * FROM Game
              JOIN Studio ON Game.StudioID = Studio.StudioID;"""
     results = query_db(sql)
     return render_template('gamepage.html', results=results)
 
 
- 
+
 
 
 
