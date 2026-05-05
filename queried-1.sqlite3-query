@@ -87,3 +87,61 @@ VALUES (21, 7.99, 'UK', 20, 'Vampire Survivors', 2, 'https://upload.wikimedia.or
 INSERT INTO studio(StudioID, Name) VALUES (21, 'ZA/UM');
 INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
 VALUES (22, 59.99, 'UK', 21, 'Disco Elysium', 2, 'https://upload.wikimedia.org/wikipedia/en/0/0d/Disco_Elysium_Poster.jpeg');
+
+
+UPDATE Game 
+SET introduction = "Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world. Composed of the San Andreas open countryside area, and its fictional Blaine County and city of Los Santos, the world is much larger in area than earlier entries in the series. It may be fully explored after the game's beginning without restriction, although story progress unlocks more gameplay content"
+WHERE Gameid = 5;
+
+UPDATE Game 
+SET introduction = "Stardew Valley is a farm life simulation video game set in top-down perspective. The open-ended game starts with the player character leaving their corporate job to manage a farm just outside of Pelican Town, located in the eponymous Stardew Valley. The farm inherited from their deceased grandfather must be restored, and players must assist in the town's revival.
+
+Players may choose from several different farm types, each with a unique theme and different benefits and drawbacks. Each theme helps players focus on upgrading different types of skills faster. On the farm, players need to cut down trees, break rocks, and use a scythe to clear weeds to make space for tilling and planting. The farming system allows players to plant seasonal seeds that require daily watering and generally must be harvested before the next season. Players can also build barns and coops to raise animals for products like eggs and milk.[11][12] As the game progresses through four 28-day seasons, players can complete certain tasks known as bundles. Players must collect a set amount of goods to complete each bundle and bring them to the Community Center to unlock new areas and activities such as a new island.[8]
+
+Players may develop skills in farming, foraging, fishing, mining, and combat. Interacting with townspeople and giving gifts builds relationships over time. Players can marry one of 12 bachelors or bachelorettes regardless of gender, allowing the spouse to help with daily farm chores such as cooking, feeding animals, or watering crops. After marriage, the couple may choose to conceive a child. Time in the game is divided into day-length segments. Each morning, players begin with a full energy bar, which decreases as tasks are performed and can be replenished by eating food.[16] A nearby cave system holds ores that can be mined and smelted by using a furnace. The cave also contains monsters, adding a combat element to mining. Players must switch between a pickaxe and a sword while exploring deeper levels, where more valuable treasures can be found. A multiplayer mode was introduced in a later update, allowing online play with other players."
+WHERE Gameid = 11;
+
+
+UPDATE Game 
+SET introduction = "Terraria is a 2D sandbox game with gameplay that revolves around exploration, building, crafting, combat, survival, and mining, playable in both single-player and multiplayer modes. The game has a 2D sprite tile-based graphical style reminiscent of the 16-bit sprites found on the Super NES. The game is noted for its classic exploration-adventure style of gameplay, similar to titles such as the Metroid series and Minecraft. The player begins with a few basic tools and must mine resources, craft equipment, and defeat various enemies and bosses."
+WHERE Gameid = 12;
+
+UPDATE Game 
+SET introduction = "Hollow Knight is a 2D side-scrolling action-adventure game with Metroidvania elements. The player controls a silent, insectoid character known as the Knight, exploring the underground kingdom of Hallownest. The Knight wields a nail, which is a cone-shaped sword, used both in combat and environmental interaction. Players explore an interconnected world, unlocking new abilities that allow them to reach previously inaccessible areas, defeat challenging bosses, and uncover the lore of the fallen kingdom."
+WHERE Gameid = 13;
+
+UPDATE Game 
+SET introduction = "Hades is a roguelike action role-playing game. The player controls Zagreus, the prince of the Underworld, who is trying to escape from the realm to get away from his dispassionate father, Hades, and reach Mount Olympus. His quest is supported by the other Olympians, who grant him gifts to help fight the beings that protect the exit from the Underworld. Players fight through procedurally generated rooms in a hack-and-slash style, using a combination of weapon attacks, dashes, and magic abilities."
+WHERE Gameid = 14;
+
+UPDATE Game 
+SET introduction = "Cyberpunk 2077 is an action role-playing game played from a first-person perspective as V, a mercenary whose voice, face, hairstyles, body type and modifications, background, and clothing are customisable. Stat categories—Body, Intelligence, Reflexes, Technical, and Cool—influence the classes of character that players assume, which are NetRunner (hacking), Techie (machinery), and Solo (combat). The open world metropolis Night City consists of six regions, where players can drive vehicles, complete quests, and engage in varied combat and stealth encounters."
+WHERE Gameid = 15;
+
+UPDATE Game 
+SET introduction = "Baldur's Gate 3 is a role-playing video game that offers both a single-player element and cooperative multiplayer element. Players can create one or more characters and form a party along with computer-generated characters to explore the game's story. Optionally, players are able to take one of their characters and team up online with other players to form a party. It features turn-based combat, heavily based on the Dungeons & Dragons 5th Edition ruleset, emphasizing positioning, environmental interactions, and dice rolls."
+WHERE Gameid = 16;
+
+UPDATE Game 
+SET introduction = "Portal 2 is a first-person puzzle-platform game. The player takes the role of Chell in the single-player campaign, or as one of two robots—Atlas and P-Body—in the cooperative campaign. The game's puzzles are solved by using the portal gun, a device that can create two portals connecting two distinct areas in space. Players must use these portals to move themselves, objects, and various puzzle elements like lasers and light bridges across the environment, while interacting with new mechanics such as gels that alter surface properties."
+WHERE Gameid = 17;
+
+UPDATE Game 
+SET introduction = "Elden Ring is an action role-playing game played in a third-person perspective with elements similar to those found in its predecessors, the Souls series as well as Bloodborne and Sekiro: Shadows Die Twice. It features a seamless open world setting that players can freely explore, riding a spectral steed named Torrent. Combat relies heavily on stamina management, dodging, and varied character-building elements. The game world is filled with dungeons, catacombs, and legacy dungeons guarded by complex boss encounters."
+WHERE Gameid = 18;
+
+UPDATE Game 
+SET introduction = "Factorio is a construction and management simulation game focused on resource-gathering with real-time strategy and survival elements. The player survives by locating and harvesting resources to craft various tools and machines, which in turn create more advanced materials that allow for the progression to more sophisticated technologies. The core gameplay loop revolves around building and managing a fully automated factory system, using transport belts and robotic arms to move items, while defending the infrastructure from hostile alien creatures."
+WHERE Gameid = 19;
+
+UPDATE Game 
+SET introduction = "Cuphead is a run-and-gun game that features continuous boss fights, with interspersed platforming levels. All of these are housed in an overworld role-playing game-style map. The game includes a local cooperative mode allowing a second player to control Mugman. Players have infinite lives, keeping all equipment between deaths. During battles, players must parry specific objects to build up a super meter, which can be unleashed for devastating attacks, all presented in a visual style inspired by 1930s rubber hose animation."
+WHERE Gameid = 20;
+
+UPDATE Game 
+SET introduction = "Vampire Survivors is a time survival game with minimalistic gameplay and roguelite elements. The player controls a character who automatically attacks while fighting against continuous, massive waves of monsters. The goal is to survive the monster onslaught for a set time limit, usually 30 minutes. Defeating monsters drops experience gems; collecting them levels up the character, allowing the player to select from a randomized pool of new weapons and passive items, eventually creating overwhelmingly powerful synergies."
+WHERE Gameid = 21;
+
+UPDATE Game 
+SET introduction = "Disco Elysium is a role-playing video game that features an open world and dialogue-heavy gameplay mechanics. The game is presented in an isometric perspective in which the player takes the role of an amnesiac detective on a murder case. Unlike traditional role-playing games, Disco Elysium features no real-time combat; instead, action and progression are handled entirely through skill checks and intricate dialogue trees. The player has 24 distinct skills representing aspects of their psyche and physique, which actively interject and converse with the player."
+WHERE Gameid = 22;

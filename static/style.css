@@ -13,7 +13,10 @@ body,h1,h2,h3,h4,h5,h6 {
 .six-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
 }
 img {
     width: 100%;
