@@ -10,9 +10,9 @@ body {
 body,h1,h2,h3,h4,h5,h6 {
     font-family: Righteous, sans-serif;
 }
-.three-column {
+.six-column {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2em;
 }
 img {
@@ -52,16 +52,16 @@ img {
   font-size: 1.2em;
 }
 
-.three-column {
+/*.three-column {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* three equal columns */
+  grid-template-columns: repeat(3, 1fr);  three equal columns 
   gap: 20px;
   width: 90%;
   margin: auto;
   margin-top: 40px;
 }
-
+*/
 
 ul {
   list-style-type: none;
