@@ -35,3 +35,55 @@ SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
 WHERE Game.Gameid = 3;
     
 ALTER TABLE Game ADD COLUMN imageURL TEXT;
+
+
+INSERT INTO studio(StudioID, Name) 
+VALUES (10, 'Chucklefish');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL) 
+VALUES (11, 17.99, 'UK', 10, 'Stardew Valley', 2, 'https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png');
+
+
+
+INSERT INTO studio(StudioID, Name) VALUES (11, 'Re-Logic');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (12, 14.99, 'USA', 11, 'Terraria', 2, 'https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Terraria_Steam_artwork.jpg/250px-Terraria_Steam_artwork.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (12, 'Team Cherry');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (13, 21.99, 'Australia', 12, 'Hollow Knight', 2, 'https://upload.wikimedia.org/wikipedia/en/d/de/Hollow_Knight_2026_cover_art.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (13, 'Supergiant Games');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (14, 38.99, 'USA', 13, 'Hades', 2, 'https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (14, 'CD Projekt Red');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (15, 99.99, 'Poland', 14, 'Cyberpunk 2077', 1, 'https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (15, 'Larian Studios');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (16, 99.99, 'Belgium', 15, 'Baldur''s Gate 3', 0, 'https://store-images.s-microsoft.com/image/apps.11593.13550459053619040.9c555c73-a698-4992-b0f3-c5084cf18b5e.82a9ea41-c628-4d02-8a0f-d0304eba31c7');
+
+INSERT INTO studio(StudioID, Name) VALUES (16, 'Valve');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (17, 14.99, 'USA', 16, 'Portal 2', 3, 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Portal2cover.jpg/250px-Portal2cover.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (17, 'FromSoftware');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (18, 99.99, 'Japan', 17, 'Elden Ring', 1, 'https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (18, 'Wube Software');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (19, 50.00, 'Czech Republic', 18, 'Factorio', 2, 'https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Factorio_cover.png/250px-Factorio_cover.png');
+
+INSERT INTO studio(StudioID, Name) VALUES (19, 'Studio MDHR');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (20, 29.99, 'Canada', 19, 'Cuphead', 2, 'https://upload.wikimedia.org/wikipedia/en/e/eb/Cuphead_%28artwork%29.png');
+
+INSERT INTO studio(StudioID, Name) VALUES (20, 'Poncle');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (21, 7.99, 'UK', 20, 'Vampire Survivors', 2, 'https://upload.wikimedia.org/wikipedia/en/e/e6/Vampire_Survivors_key_art.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (21, 'ZA/UM');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (22, 59.99, 'UK', 21, 'Disco Elysium', 2, 'https://upload.wikimedia.org/wikipedia/en/0/0d/Disco_Elysium_Poster.jpeg');
