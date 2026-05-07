@@ -3,7 +3,7 @@
   <section class="two-column">
     <!-- Left column: phone picture -->
     <div class="image">
-      <img src="static/image/phone.png" alt="phone picture">
+      <img src="static/image/playgame.jpg" alt="phone picture">
     </div>
 
     <!-- Right column: text content -->
@@ -13,5 +13,68 @@
       </p>
 
     </div>
+  </section>
+
+
+  <h3>something new</h3>
+<hr>
+<div class="six-column">
+    {% for game in results %}
+        {% if game[6] == 0  %} 
+        <div class="w3-card-4">
+            <a href="{{ url_for('game', gameid=game[0]) }}">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
+            </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<h3 style="margin-top: 50px;">Most popular</h3>
+<hr>
+<div class="six-column">
+    {% for game in results %}
+        {% if game[6] == 1 %}
+        <div class="w3-card-4">
+            <a href="{{ url_for('game', gameid=game[0]) }}">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
+            </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<h3 style="margin-top: 50px;">Small and nice</h3>
+<hr>
+<div class="six-column">
+    {% for game in results %}
+        {% if game[6] == 2 %}
+        <div class="w3-card-4">
+            <a href="{{ url_for('game', gameid=game[0]) }}">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
+            </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<h3 style="margin-top: 50px;">Classic</h3>
+<hr>
+<div class="six-column">
+    {% for game in results %}
+        {% if game[6] == 3 %}
+        <div class="w3-card-4">
+            <a href="{{ url_for('game', gameid=game[0]) }}">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
+            </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+    
+
+
 
 {% endblock %}

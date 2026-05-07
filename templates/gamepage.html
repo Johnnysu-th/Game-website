@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<h3>something new</h3>
+  <h3>something new</h3>
 <hr>
 <div class="six-column">
     {% for game in results %}
         {% if game[6] == 0  %} 
         <div class="w3-card-4">
             <a href="{{ url_for('game', gameid=game[0]) }}">
-                <img src="{{ game[5] }}" alt="{{ game[4] }}" style="width:100%">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
             </a>
         </div>
         {% endif %}
@@ -22,7 +22,7 @@
         {% if game[6] == 1 %}
         <div class="w3-card-4">
             <a href="{{ url_for('game', gameid=game[0]) }}">
-                <img src="{{ game[5] }}" alt="{{ game[4] }}" style="width:100%">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
             </a>
         </div>
         {% endif %}
@@ -37,7 +37,7 @@
         {% if game[6] == 2 %}
         <div class="w3-card-4">
             <a href="{{ url_for('game', gameid=game[0]) }}">
-                <img src="{{ game[5] }}" alt="{{ game[4] }}" style="width:100%">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
             </a>
         </div>
         {% endif %}
@@ -52,7 +52,7 @@
         {% if game[6] == 3 %}
         <div class="w3-card-4">
             <a href="{{ url_for('game', gameid=game[0]) }}">
-                <img src="{{ game[5] }}" alt="{{ game[4] }}" style="width:100%">
+                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
             </a>
         </div>
         {% endif %}

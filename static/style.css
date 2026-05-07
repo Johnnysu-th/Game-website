@@ -66,6 +66,17 @@ img {
 }
 */
 
+
+.gamecoverimg {
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover;   
+    object-position: top; 
+    border-radius: 4px 4px 0 0; 
+}
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
