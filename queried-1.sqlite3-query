@@ -145,3 +145,83 @@ WHERE Gameid = 21;
 UPDATE Game 
 SET introduction = "Disco Elysium is a role-playing video game that features an open world and dialogue-heavy gameplay mechanics. The game is presented in an isometric perspective in which the player takes the role of an amnesiac detective on a murder case. Unlike traditional role-playing games, Disco Elysium features no real-time combat; instead, action and progression are handled entirely through skill checks and intricate dialogue trees. The player has 24 distinct skills representing aspects of their psyche and physique, which actively interject and converse with the player."
 WHERE Gameid = 22;
+
+
+
+
+INSERT INTO studio(StudioID, Name) VALUES (22, 'Extremely OK Games');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (23, 19.99, 'Canada', 22, 'Celeste', 2, 'https://upload.wikimedia.org/wikipedia/en/5/52/Celeste_box_art_full.png');
+
+INSERT INTO studio(StudioID, Name) VALUES (23, 'Mobius Digital');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (24, 24.99, 'USA', 23, 'Outer Wilds', 2, 'https://upload.wikimedia.org/wikipedia/en/f/f6/Outer_Wilds.jpg');
+
+INSERT INTO studio(StudioID, Name) VALUES (24, 'MINTROCKET');
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (25, 19.99, 'South Korea', 24, 'Dave the Diver', 2, 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Dave_the_Diver_cover_art.jpg/220px-Dave_the_Diver_cover_art.jpg');
+
+
+
+UPDATE Game 
+SET introduction = "Celeste is a platform game in which players control a young woman named Madeline as she makes her way up Mount Celeste while avoiding various deadly obstacles. The game features tight controls, challenging platforming sequences, and a touching story about overcoming anxiety. Players can use a mid-air dash and wall-jump mechanics to navigate complex screens filled with spikes and traps."
+WHERE Gameid = 23;
+
+UPDATE Game 
+SET introduction = "Outer Wilds is an action-adventure game featuring exploration and puzzle-solving. The player character is an unnamed astronaut exploring a solar system stuck in a 22-minute time loop that ends with the sun going supernova. The player explores the ruins of an ancient alien race known as the Nomai to discover the cause of the time loop, retaining knowledge gained in previous loops to access new areas."
+WHERE Gameid = 24;
+
+UPDATE Game 
+SET introduction = "Dave the Diver is a casual, single-player adventure RPG featuring deep-sea exploration and fishing during the day and sushi restaurant management at night. Players explore the ever-changing Blue Hole to catch various fish and collect resources, then use their catch to prepare exotic dishes for customers, upgrading their equipment and expanding the business as they uncover the secrets of the deep."
+WHERE Gameid = 25;
+
+
+INSERT INTO studio(StudioID, Name) VALUES (26, 'Riot Games');
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (27, 0, 'USA', 26, 'Valorant', 1 , 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1200px-Valorant_logo_-_pink_color_version.svg.png');
+
+UPDATE Game 
+SET introduction = "Valorant is a free-to-play first-person tactical hero shooter. The game operates on a team-based system of five players against five players, where players play as a set of Agents, characters designed based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it. Agents have unique abilities, each requiring charges, as well as a unique ultimate ability that requires charging through kills, deaths, orbs, or objectives."
+WHERE Gameid = 27;
+
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (28, 69.99, 'Japan', 26, 'Monster Hunter Wilds', 0 , 'https://store-images.s-microsoft.com/image/apps.21928.13756178220832359.b47fa0aa-4556-4117-82a2-a06b869c8fed.929868f9-20f4-4b88-aba6-3de7cb138e11');
+
+UPDATE Game 
+SET introduction = "Monster Hunter Wilds is an action role-playing game where players hunt massive monsters across a living, breathing ecosystem. In this entry, the environment is dynamic, with weather patterns drastically changing the landscape and monster behavior. Players use a variety of weapons and the new Seikret mount to explore vast wildernesses, engaging in deep combat mechanics and strategic resource gathering to craft powerful gear."
+WHERE Gameid = 28;
+
+
+
+
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (29, 59.99, 'USA', 3, 'Red Dead Redemption 2', 3, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s');
+
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (30, 16.50, 'USA', 0, 'Left 4 Dead 2', 3, 'https://upload.wikimedia.org/wikipedia/en/b/ba/Left4Dead2.jpg');
+
+
+
+UPDATE Game 
+SET introduction = "Red Dead Redemption 2 is a western-themed action-adventure game. Played from a first or third-person perspective, the game is set in an open-world environment featuring a fictionalized version of the Western, Midwestern, and Southern United States in 1899. Gameplay elements include shootouts, robberies, hunting, horseback riding, and interacting with non-player characters. A bounty system governs the response of law enforcement to crimes committed by the player."
+WHERE Gameid = 29;
+
+UPDATE Game 
+SET introduction = "Left 4 Dead 2 is a cooperative first-person shooter in which players control one of four survivors fighting against hordes of zombies, known as the Infected. The game's levels are composed of several campaigns, each divided into distinct stages. The gameplay is heavily focused on cooperation and is monitored by an AI known as the 'Director,' which alters the pace, enemy placement, and item spawns based on the players' performance to create a dynamic experience."
+WHERE Gameid = 30;
+
+
+
+INSERT INTO studio(StudioID, Name) VALUES (27, 'Crystal Dynamics');
+
+
+INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
+VALUES (31, 29.99, 'USA', 27, 'Rise of the Tomb Raider', 3, 'https://upload.wikimedia.org/wikipedia/en/2/29/Rise_of_the_Tomb_Raider.jpg');
+
+UPDATE Game 
+SET introduction = "Rise of the Tomb Raider is an action-adventure game played from a third-person perspective. Players control Lara Croft through various environments, battling enemies and completing puzzle-platforming sections while using improvised weapons and gadgets to progress through the story. The game features a crafting system, allowing players to create items like different arrow types by scavenging materials from plants and animals in the harsh Siberian environment. It also emphasizes 'Tombs,' which are optional environmental puzzles that reward players with new skills."
+WHERE Gameid = 31;
