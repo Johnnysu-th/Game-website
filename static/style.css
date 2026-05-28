@@ -76,8 +76,9 @@ img {
 }
 
 
-
+/* Navbar */
 ul {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -99,4 +100,21 @@ ul li a {
 
 ul li a:hover {
   background-color: #9219F9;
+}
+
+
+.w3-card-4 {
+    transition: transform 0.3s , box-shadow 0.3s ; 
+  }
+
+
+.w3-card-4:hover {
+    transform: translateY(-8px); /* Float up 8px */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3) }
+
+
+
+h3 {
+    margin-left: 70px;
+   
 }

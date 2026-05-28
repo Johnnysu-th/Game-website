@@ -69,6 +69,15 @@ def gamepage():
     return render_template('gamepage.html', results=results)
 
 
+@app.route('/games')
+def somethingnewpage():
+  
+    sql = """SELECT * FROM Game
+             JOIN Studio ON Game.StudioID = Studio.StudioID
+             JOIN Classification ON Game.ClassificationID = Classification.ClassificationID"""
+    results = query_db(sql)
+    return render_template('somethingnewpage.html', results=results)
+
 
 
 
