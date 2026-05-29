@@ -69,17 +69,44 @@ def gamepage():
     return render_template('gamepage.html', results=results)
 
 
-@app.route('/games')
+@app.route('/somethingnew')
 def somethingnewpage():
   
     sql = """SELECT * FROM Game
              JOIN Studio ON Game.StudioID = Studio.StudioID
-             JOIN Classification ON Game.ClassificationID = Classification.ClassificationID"""
+             WHERE Game.ClassificationID = 0"""
     results = query_db(sql)
     return render_template('somethingnewpage.html', results=results)
 
 
 
+
+
+@app.route('/mostpopular')
+def mostpopularpage():
+    sql = """SELECT * FROM Game
+             JOIN Studio ON Game.StudioID = Studio.StudioID
+             WHERE Game.ClassificationID = 1"""
+    results = query_db(sql)
+    return render_template('mostpopularpage.html', results=results)
+
+
+@app.route('/smallandnice')
+def smallandnicepage():
+    sql = """SELECT * FROM Game
+             JOIN Studio ON Game.StudioID = Studio.StudioID
+             WHERE Game.ClassificationID = 2"""
+    results = query_db(sql)
+    return render_template('smallandnicepage.html', results=results)
+
+
+@app.route('/classic')
+def classicpage():
+    sql = """SELECT * FROM Game
+             JOIN Studio ON Game.StudioID = Studio.StudioID
+             WHERE Game.ClassificationID = 3"""
+    results = query_db(sql)
+    return render_template('classicpage.html', results=results)
 
 
 

@@ -55,16 +55,16 @@ img {
   font-size: 1.2em;
 }
 
-/*.three-column {
+.four-column {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  three equal columns 
-  gap: 20px;
-  width: 90%;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 50px;
+  width: 60%;
   margin: auto;
   margin-top: 40px;
 }
-*/
+
 
 
 .gamecoverimg {
@@ -116,5 +116,12 @@ ul li a:hover {
 
 h3 {
     margin-left: 70px;
-   
+
+}
+
+
+.bottomimage{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
 }
