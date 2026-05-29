@@ -80,8 +80,8 @@ img {
 ul {
   
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 0;
+  padding-left: 60px;
   overflow: hidden;
   background-color: #5239F6;
 }
