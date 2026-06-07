@@ -58,12 +58,24 @@ img {
 .four-column {
   width: 100%;
   display: grid;
+  gap: 50px;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.three-column {
+  width: 100%;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);  
   gap: 50px;
   width: 60%;
   margin: auto;
   margin-top: 40px;
 }
+
+
+  
 
 
 
