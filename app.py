@@ -110,6 +110,15 @@ def classicpage():
 
 
 
+@app.route('/gamenews')
+def gamenews():
+  
+    sql = """SELECT * FROM GameNews"""
+    results = query_db(sql)
+    return render_template('gamenews.html', results=results)
+
+
+
 
 if __name__ == '__main__':   
    app.run(debug=True)

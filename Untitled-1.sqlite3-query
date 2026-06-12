@@ -1,0 +1,4 @@
+-- database: ./database.db
+
+SELECT * FROM Game
+ORDER BY `Cost` ASC;

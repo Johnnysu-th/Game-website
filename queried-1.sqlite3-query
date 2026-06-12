@@ -196,6 +196,87 @@ WHERE Gameid = 28;
 
 
 
+-- 1. 最终幻想16加入会免
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (1, 'Final Fantasy XVI Leads June 2026 PS Plus Lineup');
+
+UPDATE GameNews 
+SET article = "Sony has announced the latest additions to the PlayStation Plus Game Catalogue for June 2026. Final Fantasy XVI leads the lineup for PS Plus Extra and Premium subscribers, offering players a chance to explore the continent of Valisthea."
+WHERE articleID = 1;
+
+-- 2. 塞尔达传说：时之笛重制版公布
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (2, 'The Legend of Zelda: Ocarina of Time Remake Announced for Switch 2');
+
+UPDATE GameNews 
+SET article = "Nintendo revealed a highly anticipated remake of The Legend of Zelda: Ocarina of Time for the upcoming Switch 2 console. The classic N64 title is being rebuilt from the ground up for a new generation."
+WHERE articleID = 2;
+
+-- 3. 王国之心4实机演示惊喜亮相
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (3, 'Kingdom Hearts 4 Gameplay Gets Surprise Reveal');
+
+UPDATE GameNews 
+SET article = "Square Enix finally showed off Kingdom Hearts 4 gameplay during the June 2026 Nintendo Direct. The game is confirmed for multiple platforms including Nintendo Switch 2, PS5, Xbox Series X|S, and PC."
+WHERE articleID = 3;
+
+-- 4. 微软公布25周年纪念版透明Xbox
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (4, 'Xbox Series X25 Announced with Translucent Design');
+
+UPDATE GameNews 
+SET article = "Microsoft has unveiled a special 25th-Anniversary Edition Xbox Series X. Dubbed the Series X25, the console features a nostalgic translucent design inspired by the original Xbox launch."
+WHERE articleID = 4;
+
+-- 5. 使命召唤：现代战争4正式官宣
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (5, 'Call of Duty: Modern Warfare 4 Officially Announced');
+
+UPDATE GameNews 
+SET article = "Activision and Infinity Ward have unveiled the next entry in their blockbuster franchise: Call of Duty: Modern Warfare 4. The game will feature a new DMZ 2.0 mode ready to take on extraction shooters."
+WHERE articleID = 5;
+
+-- 6. 神鬼寓言重启版宣布延期
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (6, 'Fable Reboot Delayed to Early 2027');
+
+UPDATE GameNews 
+SET article = "The highly anticipated reboot of Fable from developer Playground Games has been delayed. Originally slated for August 2026, the game is now scheduled to release in February 2027."
+WHERE articleID = 6;
+
+-- 7. 宝可梦第十世代公布
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (7, 'Pokemon Winds And Waves Revealed as 10th Generation');
+
+UPDATE GameNews 
+SET article = "The 10th generation of Pokémon is officially here. Titled Pokemon Winds And Waves, the game was revealed with a new trailer, though the wait for its release will be the franchise's longest yet."
+WHERE articleID = 7;
+
+-- 8. 古墓丽影重制版在夏日游戏节亮相
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (8, 'Tomb Raider: Legacy of Atlantis Revealed at Summer Game Fest');
+
+UPDATE GameNews 
+SET article = "Summer Game Fest 2026 featured the reveal of Tomb Raider: Legacy of Atlantis. The game is described as a vivid, high-pace remake of a classic adventure, starring Alix Wilton Regan as Lara Croft."
+WHERE articleID = 8;
+
+-- 9. 异形：隔离2正式公布
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (9, 'Alien: Isolation 2 Announced to Continue the Horror Legacy');
+
+UPDATE GameNews 
+SET article = "Horror fans rejoice as Alien: Isolation 2 has been officially announced. The sequel promises to keep the original game's uncompromising approach to raising tension and surviving against the Xenomorph."
+WHERE articleID = 9;
+
+-- 10. 我的世界确认登陆Switch 2
+INSERT INTO GameNews (articleID, articletitle) 
+VALUES (10, 'Minecraft Getting Dedicated Nintendo Switch 2 Version');
+
+UPDATE GameNews 
+SET article = "A dedicated Nintendo Switch 2 version of Minecraft was confirmed, featuring improved visuals, enhanced lighting, and updated shadow effects. Existing worlds will seamlessly carry over."
+WHERE articleID = 10;
+
+
 
 INSERT INTO Game (Gameid, Cost, Country, StudioID, Gamename, ClassificationID, imageURL)
 VALUES (29, 59.99, 'USA', 3, 'Red Dead Redemption 2', 3, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s');

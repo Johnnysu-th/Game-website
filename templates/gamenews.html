@@ -1,19 +1,21 @@
 {% extends "layout.html" %}
 {% block body %}
 
-  <h3 style="margin-top: 20px;"></h3>
+  <h3 style="margin-top: 20px;">GameNews</h3>
 <hr>
 <div class="six-column">
-    {% for game in results %}
+    {% for GameNews in results %}
         
         <div class="w3-card-4">
-            <a href="{{ url_for('game', gameid=game[0]) }}">
-                <img src="{{ game[5] }}" alt="{{ game[4] }}" class="gamecoverimg">
+            <a href="{{ url_for('gamenews') }}">
+                <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenewsimage">
             </a>
         </div>
-      
+        
     {% endfor %}
 </div>
+
+
 
 <!-- bottom image -->
 <div class="bottomimage" style="margin-top: 200px;">
