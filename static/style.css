@@ -88,6 +88,14 @@ img {
 }
 
 
+.Gamenewsimage {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;   
+    object-position: top; 
+    border-radius: 4px 4px 0 0; 
+}
+
 /* Navbar */
 ul {
   
