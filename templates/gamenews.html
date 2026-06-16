@@ -7,11 +7,15 @@
     {% for GameNews in results %}
         
         <div class="w3-card-4">
+        <header class="w3-container w3-light-grey">
+            <h3>{{ GameNews[1] }}</h3>
+        </header>
+
             <a href="{{ url_for('gamenews') }}">
                 <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenewsimage">
             </a>
             <div class="w3-container">
-                <h4>{{ GameNews[1] }}</h4>
+                <!-- <h4>{{ GameNews[1] }}</h4> -->
                <!--- <p>{{ GameNews[2] }}</p>-->
             </div>
         </div>

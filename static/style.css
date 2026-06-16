@@ -69,12 +69,21 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  
   gap: 50px;
-  width: 60%;
+  width: 90%;
   margin: auto;
+  margin-left:70px;
   margin-top: 40px;
 }
 
-
+.two-column {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 50px;
+  width: 60%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
   
 
 
