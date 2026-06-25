@@ -80,14 +80,20 @@ def cartegory(id):
     return render_template('gamepage.html', results=results)
 
 
-
-
 @app.route('/gamenews')
 def gamenews():
   
     sql = """SELECT * FROM GameNews"""
     results = query_db(sql)
     return render_template('gamenews.html', results=results)
+
+
+@app.route('/Newspage')
+def Newspage():
+  
+    sql = """SELECT * FROM GameNews"""
+    results = query_db(sql)
+    return render_template('Newspage.html', results=results)
 
 
 

@@ -3,16 +3,16 @@
 
 <h3 style="margin-top: 20px;">News</h3>
 <hr>
-<div class="six-column">
-    {% for GameNews in results %}
-        
-        <div class="w3-card-4">
-            <a href="{{ url_for('GameNews') }}">
-                <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenewsimage">
-            </a>
-        </div>
-      
-    {% endfor %}
+div class="two-column">
+    <!-- image on the left -->
+    <div class="left-column">
+        <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}">
+    </div>
+    <!-- details on the right -->
+    <div class="info">
+        <h1>{{ GameNews[1] }}</h1>
+        <p>{{ GameNews[2] }}</p>
+    </div>
 </div>
 
 <!-- bottom image -->
