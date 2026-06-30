@@ -45,7 +45,7 @@ img {
 .two-column {
   display: grid;
   grid-template-columns: 1fr 2fr; /* left narrow, right wide */
-  gap: 50px;
+  gap: 40px;
   width: 90%;
   margin: auto;
   margin-top: 40px;
@@ -97,7 +97,7 @@ img {
 }
 
 
-.Gamenewsimage {
+.Gamenews-image {
     width: 100%;
     aspect-ratio: 16 / 9; 
     object-fit: cover;   

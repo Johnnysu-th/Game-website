@@ -40,9 +40,6 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-   #home page- just the Cost, Country, and GameName.
-  
-
 
    sql="""
    SELECT * FROM Game
@@ -88,13 +85,18 @@ def gamenews():
     return render_template('gamenews.html', results=results)
 
 
-@app.route('/Newspage')
-def Newspage():
+@app.route('/Newspage/<int:id>')
+def Newspage(id):
   
-    sql = """SELECT * FROM GameNews"""
-    results = query_db(sql)
-    return render_template('Newspage.html', results=results)
-
+    sql = """SELECT * FROM GameNews
+     WHERE GameNews.articleID = ?"""
+    results = query_db(sql, (id,))
+    print(results)
+    
+    if results:
+        return render_template('Newspage.html', GameNews=results[0])
+    else:
+        return "no news found", 404
 
 
 
