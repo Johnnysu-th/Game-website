@@ -76,11 +76,10 @@ img {
 }
 
 .two-column {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  
   gap: 50px;
-  width: 60%;
   margin-left: 40px;
   margin-top: 40px;
 }
@@ -138,7 +137,7 @@ ul li a:hover {
 
 
 .w3-card-4:hover {
-    transform: translateY(-8px); /* Float up 8px */
+    transform: translateY(-5px); /* Float up 5px */
     box-shadow: 0 12px 24px rgba(0,0,0,0.3) }
 
 
