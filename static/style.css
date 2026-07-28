@@ -58,6 +58,7 @@ img {
 .four-column {
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);  
   gap: 50px;
   width: 60%;
   margin: auto;

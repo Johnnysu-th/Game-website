@@ -13,9 +13,11 @@
           <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenews-image">
         </a>
 
+         <a href="{{ url_for('Newspage', id=GameNews[0]) }}">
       <header class="w3-container w3" style="background-color: #9219F9;">
           <h3>{{ GameNews[1] }}</h3>
         </header>
+        </a>
       </div>
     {% endif %}
   {% endfor %}
