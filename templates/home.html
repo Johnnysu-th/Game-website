@@ -18,9 +18,11 @@
 <!--three types of games-->
   <h3 style="margin-top: 50px;">something new</h3>
 <hr>
+ <a href="{{ url_for('cartegory', id=0) }}">
 <div class="image">
       <img src="static/image/LATEST GAMES.png" alt="heading1 picture">
     </div>
+    </a>
 <div class="six-column">
     {% for game in results %}
         {% if game[6] == 0  %} 
@@ -33,7 +35,14 @@
     {% endfor %}
 </div>
 
+
+
 <h3 style="margin-top: 50px;">Most popular</h3>
+<a href="{{ url_for('cartegory', id=1) }}">
+<div class="image">
+      <img src="static/image/MOST POPULAR.png" alt="heading2 picture">
+    </div>
+</a>
 <hr>
 <div class="six-column">
     {% for game in results %}
@@ -49,6 +58,11 @@
 
 
 <h3 style="margin-top: 50px;">Small and nice</h3>
+<a href="{{ url_for('cartegory', id=2) }}">
+<div class="image">
+      <img src="static/image/SMALL GAMES.png" alt="heading3 picture">
+    </div>
+</a>
 <hr>
 <div class="six-column">
     {% for game in results %}
@@ -64,6 +78,11 @@
 
 
 <h3 style="margin-top: 50px;">Classic</h3>
+<a href="{{ url_for('cartegory', id=3) }}">
+<div class="image">
+      <img src="static/image/CLASSIC.png" alt="heading4 picture">
+    </div>
+</a>
 <hr>
 <div class="six-column">
     {% for game in results %}
