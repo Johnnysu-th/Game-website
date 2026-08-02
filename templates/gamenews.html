@@ -3,25 +3,26 @@
 
   <h3 style="margin-top: 20px;">GameNews</h3>
 <hr>
-<div class="three-column">
-  {% for GameNews in results %}
-    {% if GameNews and GameNews[0] %}
-      <div class="w3-card-4">
-        
-        
-        <a href="{{ url_for('Newspage', id=GameNews[0]) }}">
-          <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenews-image">
-        </a>
 
-         <a href="{{ url_for('Newspage', id=GameNews[0]) }}">
-      <header class="w3-container w3" style="background-color: #9219F9;">
-          <h3>{{ GameNews[1] }}</h3>
-        </header>
-        </a>
-      </div>
+
+    <div class="two-column">
+    {% for GameNews in results %}
+    {% if GameNews and GameNews[0] %}
+    <div class="left-column">
+        <div class="w3-card-4">
+            <a href="{{ url_for('Newspage', id=GameNews[0]) }}">
+                <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenews-image">
+            </a>
+        </div>
+    <div class="right-column">
+        <h2>{{ GameNews[1] }}</h2>
+        <!-- <p>{{ GameNews[2] }}</p> -->
+    </div>
+    </div>
     {% endif %}
-  {% endfor %}
-</div>
+    {% endfor %}
+
+
 
 
 

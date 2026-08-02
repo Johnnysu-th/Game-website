@@ -48,7 +48,7 @@ def home():
 
    results = query_db(sql)
    return render_template('home.html', results=results)
-
+# gammepage route
 @app.route("/Game/<int:gameid>")
 def game(gameid):
     spl = """SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
@@ -65,7 +65,7 @@ def gamepage():
     results = query_db(sql)
     return render_template('gamepage.html', results=results)
 
-
+# route for the category page
 @app.route('/cartegory/<int:id>')
 def cartegory(id):
      
@@ -76,7 +76,7 @@ def cartegory(id):
     print(results)
     return render_template('gamepage.html', results=results)
 
-
+# route for the news page
 @app.route('/gamenews')
 def gamenews():
   
@@ -84,7 +84,7 @@ def gamenews():
     results = query_db(sql)
     return render_template('gamenews.html', results=results)
 
-
+# route for the news page
 @app.route('/Newspage/<int:id>')
 def Newspage(id):
   
