@@ -37,7 +37,7 @@ def query_db(query, args=(), one=False):
 
 
 
-
+# route for the home page
 @app.route('/')
 def home():
 
@@ -48,6 +48,8 @@ def home():
 
    results = query_db(sql)
    return render_template('home.html', results=results)
+
+
 # gammepage route
 @app.route("/Game/<int:gameid>")
 def game(gameid):
@@ -56,7 +58,7 @@ def game(gameid):
     result = query_db(spl, (gameid,),True)
     return render_template('game.html', game=result)
 
-
+# route for the game page
 @app.route('/games')
 def gamepage():
   
@@ -65,7 +67,7 @@ def gamepage():
     results = query_db(sql)
     return render_template('gamepage.html', results=results)
 
-# route for the category page
+# route for the cartegory 
 @app.route('/cartegory/<int:id>')
 def cartegory(id):
      
@@ -84,7 +86,7 @@ def gamenews():
     results = query_db(sql)
     return render_template('gamenews.html', results=results)
 
-# route for the news page
+# route for the each news own page
 @app.route('/Newspage/<int:id>')
 def Newspage(id):
   
