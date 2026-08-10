@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden; 
 }
+
 body,h1,h2,h3,h4,h5,h6 {
     font-family: Righteous, sans-serif;
 }
@@ -20,6 +21,21 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 img {
     width: 100%;
+    
+}
+
+.coverimage {
+    width: 72%;
+    height: auto;
+    margin-left:100px;
+    margin-top: 20px;
+}
+
+.newsimage{
+    width: 70%;
+    height: auto;
+    margin-left:75px;
+    margin-top:20px;
 }
 .hero-image {
   background-image: url(image/imageimage.png);
@@ -44,15 +60,24 @@ img {
 
 .two-column {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* left narrow, right wide */
+  grid-template-columns: 1fr 2fr;
   gap: 40px;
   width: 90%;
   margin: auto;
   margin-top: 40px;
+  
+  
 }
 
-.info {
-  font-size: 1.2em;
+
+.info{
+  font-size:1.2em;
+}
+
+.newsinfo {
+  font-size: 1.4em;
+  margin-right:80px;
+  margin-left:80px;
 }
 
 .four-column {
@@ -81,7 +106,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  
   gap: 50px;
-  margin-left: 40px;
+  margin-left: 75px;
   margin-top: 40px;
 }
   
