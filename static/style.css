@@ -38,7 +38,7 @@ img {
     margin-top:20px;
 }
 .hero-image {
-  background-image: url(image/imageimage.png);
+  background-image: url(image/gamefinder.png);
   width: 100%;
   height: auto; 
   aspect-ratio: 1418 / 141; 
@@ -75,6 +75,7 @@ img {
 }
 
 .newsinfo {
+  white-space: pre-wrap;
   font-size: 1.4em;
   margin-right:80px;
   margin-left:80px;
