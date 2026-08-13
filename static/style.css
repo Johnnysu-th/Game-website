@@ -81,6 +81,15 @@ img {
   margin-left:80px;
 }
 
+.titleinfo {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right:80px;
+  margin-left:80px;
+}
+
+
 .four-column {
   width: 100%;
   display: grid;
