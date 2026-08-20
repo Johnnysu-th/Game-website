@@ -21,7 +21,7 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 img {
     width: 100%;
-    
+   
 }
 
 .coverimage {
@@ -45,6 +45,10 @@ img {
   background-size: cover;
   background-position: center;
   
+}
+
+.headingimage{
+    width: 100%;
 }
 
 .hero_text {
@@ -173,7 +177,7 @@ ul li a:hover {
 
 
 .w3-card-4:hover {
-    transform: translateY(-5px); /* Float up 5px */
+    transform: translateY(-5px); 
     box-shadow: 0 12px 24px rgba(0,0,0,0.3) }
 
 
