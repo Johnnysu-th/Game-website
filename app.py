@@ -87,8 +87,8 @@ def gamenews():
     return render_template('gamenews.html', results=results)
 
 # route for the each news own page
-@app.route('/Newspage/<int:id>')
-def Newspage(id):
+@app.route('/newspage/<int:id>')
+def newspage(id):
   
     sql = """SELECT * FROM GameNews
      WHERE GameNews.articleID = ?"""
@@ -96,7 +96,7 @@ def Newspage(id):
     print(results)
     
     if results:
-        return render_template('Newspage.html', GameNews=results[0])
+        return render_template('newspage.html', GameNews=results[0])
     else:
         return "no news found", 404
 
