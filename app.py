@@ -42,19 +42,19 @@ def query_db(query, args=(), one=False):
 def home():
 
    sql="""
-   SELECT * FROM Game
-   JOIN Studio ON Game.StudioID = Studio.StudioID;"""
+   SELECT * FROM game
+   JOIN studio ON game.studioid = studio.studioid;"""
 
 
    results = query_db(sql)
    return render_template('home.html', results=results)
 
 
-# gammepage route
-@app.route("/Game/<int:gameid>")
+# game page route
+@app.route("/game/<int:gameid>")
 def game(gameid):
-    spl = """SELECT * FROM Game JOIN Studio ON Game.StudioID = Studio.StudioID
-    WHERE Game.Gameid = ?;"""
+    spl = """SELECT * FROM game JOIN studio ON game.studioid = studio.studioid
+    WHERE game.gameid = ?;"""
     result = query_db(spl, (gameid,),True)
     return render_template('game.html', game=result)
 
@@ -62,18 +62,18 @@ def game(gameid):
 @app.route('/games')
 def gamepage():
   
-    sql = """SELECT * FROM Game
-             JOIN Studio ON Game.StudioID = Studio.StudioID;"""
+    sql = """SELECT * FROM game
+             JOIN studio ON game.studioid = studio.studioid;"""
     results = query_db(sql)
     return render_template('gamepage.html', results=results)
 
-# route for the cartegory 
-@app.route('/cartegory/<int:id>')
+# route for the category 
+@app.route('/category/<int:id>')
 def cartegory(id):
      
-    sql = """SELECT * FROM Game
-             JOIN Studio ON Game.StudioID = Studio.StudioID
-             WHERE Game.ClassificationID = ?"""
+    sql = """SELECT * FROM game
+             JOIN studio ON game.studioid = studio.studioid
+             WHERE game.classificationid = ?"""
     results = query_db(sql,(id,))
     print(results)
     return render_template('gamepage.html', results=results)
@@ -82,7 +82,7 @@ def cartegory(id):
 @app.route('/gamenews')
 def gamenews():
   
-    sql = """SELECT * FROM GameNews"""
+    sql = """SELECT * FROM gamenews"""
     results = query_db(sql)
     return render_template('gamenews.html', results=results)
 
@@ -90,13 +90,13 @@ def gamenews():
 @app.route('/newspage/<int:id>')
 def newspage(id):
   
-    sql = """SELECT * FROM GameNews
-     WHERE GameNews.articleID = ?"""
+    sql = """SELECT * FROM gamenews
+     WHERE gamenews.articleid = ?"""
     results = query_db(sql, (id,))
     print(results)
     
     if results:
-        return render_template('newspage.html', GameNews=results[0])
+        return render_template('newspage.html', gamenews=results[0])
     else:
         return "no news found", 404
 
