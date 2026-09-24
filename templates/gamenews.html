@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block body %}
 
-  <h3 style="margin-top: 20px;">GameNews</h3>
+  <h3 style="margin-top: 20px;">gamenews</h3>
 <hr>
 
 
     <div class="two-column">
-    {% for GameNews in results %}
-    {% if GameNews and GameNews[0] %}
+    {% for gamenews in results %}
+    {% if gamenews and gamenews[0] %}
     <div class="left-column">
         <div class="w3-card-4">
             <a href="{{ url_for('newspage', article_id=gamenews[0]) }}">
@@ -16,7 +16,7 @@
         </div>
     <div class="right-column">
         <h2>{{ gamenews[1] }}</h2>
-        <!-- <p>{{ GameNews[2] }}</p> -->
+        <!-- <p>{{ gamenews[2] }}</p> -->
     </div>
     </div>
     {% endif %}
