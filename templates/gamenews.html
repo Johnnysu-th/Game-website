@@ -10,12 +10,12 @@
     {% if GameNews and GameNews[0] %}
     <div class="left-column">
         <div class="w3-card-4">
-            <a href="{{ url_for('newspage', article_id=GameNews[0]) }}">
-                <img src="{{ GameNews[3] }}" alt="{{ GameNews[1] }}" class="Gamenews-image">
+            <a href="{{ url_for('newspage', article_id=gamenews[0]) }}">
+                <img src="{{ gamenews[3] }}" alt="{{ gamenews[1] }}" class="Gamenews-image">
             </a>
         </div>
     <div class="right-column">
-        <h2>{{ GameNews[1] }}</h2>
+        <h2>{{ gamenews[1] }}</h2>
         <!-- <p>{{ GameNews[2] }}</p> -->
     </div>
     </div>
